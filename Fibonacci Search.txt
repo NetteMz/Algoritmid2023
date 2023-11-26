@@ -1,0 +1,20 @@
+Fibonacci Search on otsingualgoritm, mis põhineb Fibonacci jada kasutamisel sorteeritud massiivis oleva elemendi leidmiseks. Algoritm sarnaneb binaarotsinguga, kuid erinevus seisneb selles, et otsinguhüpped ei ole konstantsed, vaid järgivad Fibonacci jada väärtusi.
+
+Fibonacci Search sammud:
+Määratlemine: Määrake Fibonacci jada paar, mille väärtused on väiksemad või võrdsed otsitava massiivi suurusega.
+
+Määramine: Määrake Fibonacci jada järgmine paar ja vähendage massiivi suurust selle järgi.
+
+Otsing: Võrrelge otsitavat elementi massiivi keskel asuva elemendiga. Sõltuvalt võrdluse tulemusest liikuge vastavalt Fibonacci jada väärtusele kas vasakule või paremale poole massiivi.
+
+Kordamine: Korrake protsessi, kuni leiate otsitava elemendi või massiivi suurus muutub nulliks.
+
+Efektiivsus suuremahuliste andmete puhul:
+Fibonacci Search võib olla efektiivne suuremahuliste andmete sorteeritud massiivide puhul, eriti järgmistel tingimustel:
+
+Andmestruktuuri järjestatus: Kui andmestruktuur ei ole täielikult järjestatud ja sisaldab palju korduvaid või osaliselt sorteeritud alasid, võib Fibonacci Search aidata leida elemente kiiremini kui traditsioonilised otsingualgoritmid.
+
+Mittekonstantsed hüpped: Fibonacci Searchi mittekonstantsed hüpped võivad olla kasulikud olukorras, kus otsitav element ei asu massiivi keskel ja on lähemal mõnele massiivi servale. See võib vähendada vajalike võrdluste arvu.
+
+Stsenaariumi näide:
+Kujutleme suurt sorteeritud massiivi, kus on mitmeid järjestamata osi, kus elementide vahel on suured vahekaugused. Näiteks võib massiiv sisaldada linnade nimetusi, kus mõned piirkonnad on tähestikuliselt korras, kuid teised on segamini. Kui otsime konkreetset linna, võib see olla lähemal mõnele massiivi lõpus asuvale elemendile. Selles stsenaariumis võib Fibonacci Search olla efektiivsem kui Binary Search või Ternary Search, kuna selle mittekonstantsed hüpped võivad kiiremini leida otsitava elemendi, eriti kui see ei ole massiivi keskel.
