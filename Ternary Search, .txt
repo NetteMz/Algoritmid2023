@@ -1,0 +1,23 @@
+Ternary Search on otsimisalgoritm, mis on sarnane binaarotsingule, kuid jagab otsitava piirkonna kolmeks osaks, mitte kaheks. See eeldab, et otsitav andmestruktuur on järjestatud. Algoritm vähendab otsitava piirkonna suurust kolm korda pärast iga võrdlust, otsides elementi vahemikust. Ternary Search'i põhimõte seisneb selles, et see võtab eeliseks kolmikjaotuse, kuid vajab rohkem võrdlusi kui binaarotsing.
+
+
+Ajakomplekssuse võrdlus:
+
+Ternary Search:
+Ajaline komplekssus: O(log₃n)
+Binary Search:
+Ajaline komplekssus: O(log₂n)
+
+Ternary Search'i ajaline komplekssus on teoreetiliselt suurem kui binaarotsingul, kuid praktilistes olukordades võib nende erinevus olla ebaoluline või sõltuda konkreetselt andmestruktuurist ja suurusest.
+
+Efektiivsuse võrdlus ja olukorrad:
+
+Binary Search vs. Ternary Search: 
+Ternary Search'i efektiivsus ei pruugi alati ületada binaarotsingu oma, eriti kui võrdluste hind on suur. Ternary Search kasutab kolme võrdlust iga sammu jaoks, samal ajal kui binaarotsing kasutab kahte. Seetõttu võib binaarotsing olla praktiliselt kiirem, eriti suuremate andmemahude korral.
+
+Olukorrad, kus Binary Search on eelistatum:
+
+Madalad võrdluskulud: 
+Kui võrdluste hind on oluline tegur, võib binaarotsing olla efektiivsem.
+Väikesed andmehulgad: 
+Väiksemate andmemahtude korral võib binaarotsing olla piisavalt kiire, ilma et oleks vaja lisavõrdlusi nagu Ternary Search'is.
