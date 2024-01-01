@@ -1,0 +1,7 @@
+Topelträsimine aitab vähendada kokkupõrgete arvu, kuna see kasutab kahte erinevat räsifunktsiooni, mis aitab hajutada võtmeid laiemalt. Kuigi topelträsimise algoritm võib olla veidi keerukam kui mõned teised meetodid, on seda siiski suhteliselt lihtne implementeerida.
+
+Aja- ja ruumikomplekssus:
+Topelträsimise aja- ja ruumikomplekssus sõltub oluliselt kokkupõrgete arvust. Parima stsenaariumi korral (vähe kokkupõrkeid) on otsingute, lisamiste ja eemaldamiste aeg lähedane O(1). Halvimal juhul (palju kokkupõrkeid) võib aja- ja ruumikomplekssus läheneda O(n), kuid see on siiski haruldane.
+
+Efektiivne stsenaarium:
+Topelträsimine on eriti efektiivne siis, kui esmane räsifunktsioon on hoolikalt valitud ja erinev teisest räsifunktsioonist. Parim tulemus saavutatakse siis, kui kokkupõrgete tõenäosus on madal, kuid topelträsimine suudab neid tõhusalt lahendada. Efektiivsus võib suureneda ka siis, kui hõivatud kohti on vähem või kui suudetakse valida esmane ja teine räsifunktsioon, mis on omavahel vähe seotud.
