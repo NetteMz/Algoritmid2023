@@ -1,0 +1,8 @@
+Aja keerukus: Parimal juhul, kui kõik räsiväärtused satuvad erinevatele indeksitele, on otsimise ja lisamise aeg O(1). Halvimal juhul, kui kõik räsiväärtused satuvad samale indeksile, on aja keerukus O(n).
+
+Ruumikeerukus: Massiivi suurus määrab räsiväärtuste arvu, mida saab hoida. Seega on ruumikomplekssus O(n).
+
+Indeksi kaardistamise rakendamine reaalses maailmas:
+
+Index Mapping sobib väikeste andmehulkade jaoks.Peamine kasutusvaldkond võib olla kiire ja lihtne andmete otsimine, kui on teada, et kokkupõrkeid on vähe.
+Reaalses maailmas võib seda kasutada näiteks väiksemates andmehoidlates, kus andmete kiire juurdepääs on kriitiline ja andmemaht on piiratud.
