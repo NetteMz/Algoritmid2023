@@ -1,0 +1,10 @@
+P (polünoomiaeg): Kõik probleemid, millel on efektiivne algoritm, mis leiab lahenduse polünoomiajaga.
+
+NP (mitteterminaalse polünoomiaeg): Kõik probleemid, mille lahenduse korrektsust on võimalik polünoomajaga kontrollida.
+
+P vs NP probleem on üks arvutiteaduse fundamentaalsemaid küsimusi, mis puudutab algoritmilise keerukuse teooriat. Probleem seisneb selles, kas kõik otsustusprobleemid, millele on võimalik leida lahendus P ajaga, on samad kui probleemid, mille lahendmine on lihtne, kuid lahenduse kontrollimine on NP ajaga.
+
+
+P vs NP probleemi olemus seisneb selles, kas P ja NP on samad (P = NP) või erinevad (P ≠ NP). Probleem puudutab põhimõttelist küsimust, kas kõiki arvutatavaid probleeme saab tõhusalt lahendada. See on seotud algoritmide efektiivsuse ja keerukusega. Kui P = NP, võib see ohustada paljusid tänapäeva küberkaitsealaseid süsteeme, mis põhinevad keerulistel probleemidel (näiteks faktoriseerimine). Sellest tulenevalt on paljud krüptograafilised süsteemid loodud eeldusel, et P ≠ NP. Paljud praktilised probleemid, näiteks marsuudiprobleem või graafide värvimine, kuuluvad NP-probleemide hulka. Kui P = NP, tähendaks see, et nende probleemidele on olemas polünoomajaga lahenduvad algoritmid.
+
+Kui P = NP, siis paljude NP-probleemide jaoks oleks olemas efektiivsed lahendusalgoritmid, mis muudaksid paljud keerulised optimeerimisülesanded praktiliselt lahendatavateks.Kui P = NP, võivad mõned krüptosüsteemid muutuda ebaturvaliseks, kuna mõningad keerulised probleemid (näiteks asümmeetriline krüptograafia) ei oleks enam raskelt lahendatavad. Kui P ≠ NP, kinnitab see, et mõned probleemid on eksponentsiaalse keerukusega ja vajavad keerukaid algoritme, mis ei ole polünoomiajaga lahendatavad. See tugevdaks algoritmide teooriat ja aitaks mõista keerukamate probleemide piiranguid.

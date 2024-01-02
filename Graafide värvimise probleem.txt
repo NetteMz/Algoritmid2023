@@ -1,0 +1,13 @@
+Graafide värvimise probleem seisneb graafi tippude värvimises nii, et iga serva otsas olevad tipud oleksid erinevat värvi. Värvide arv näitab, kui palju ressursse või kui palju konflikte on graafis. Oluline on, et kaks ühendatud tippu poleks samas värviga.
+
+Graafide värvimist saab kasutada ressursside jaotamise probleemides, näiteks arvutivõrkudes. Iga värviga märgitud tipp võib esindada mingit ressurssi või seadet ja värvide erinevus tagab, et kaks omavahel ühendatud ressurssi ei kasuta sama ressurssi samal ajal.
+
+Tipud saavad esindada ka sündmusi või ülesandeid ning servad võivad ühendada sündmusi, mis sõltuvad üksteisest. Graafide värvimise abil saame ajagraafikutes lahendada konflikti, kus kaks sõltuvat sündmust ei tohi samal ajahetkel toimuda.
+
+Graafide värvimine on oluline ka kompilaatorite jaoks. Sellisel juhul esindavad graafi tipud registreid ja servad näitavad olenevust. Registrite värvimise eesmärk on minimeerida konflikte ning sellega parandada kompilaatori poolt genereeritud koodi jõudlust.
+
+
+
+
+
+

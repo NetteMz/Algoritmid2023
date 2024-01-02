@@ -1,0 +1,14 @@
+Dijkstra algoritm on üks kõige tuntumaid graafide lühima tee otsimise algoritme. Algoritm töötab suunatud või suunamata kaalutud graafidel, kus iga serva kaal on positiivne arv. Dijkstra algoritm leiab lühima tee ühest algus-tipust kõikidesse teistesse tippudesse, arvutades kauguste teegraafikuid.
+
+Dijkstra algoritmi sammud:
+
+1. Märgi kõik tipud lõpmatute kaugustega algväärtusega (välja arvatud algus-tipp, mille kaugus on 0).
+2. Määra praegusele tipule algkaugus (0) ja tippudele mööda seda algkaugust uuendatud kaugused.
+3. Vali järgmine tipuks see, mille kaugus on kõige lühem ja mida pole veel külastatud.
+4. Uuenda naabertippude kaugused, võttes arvesse praeguse tipu kaugust.
+5. Korda samme 3-4 seni, kuni kõik tipud on külastatud.
+
+Dijkstra algoritm on eriti efektiivne, kui graafil on ainult positiivsed kaalud või kui peame leidma lühima tee ühest algus-tipust kõigisse teistesse tippudesse. Sellisel juhul tagab Dijkstra algoritm alati positiivse väljundi.
+
+Kui graaf sisaldab negatiivseid kaalusid või kui graaf on väga suur ja tihedalt seotud, võib Dijkstra algoritm muutuda aja jooksul ebaefektiivseks, anda ebatäpseid tulemusi või isegi ebaõnnestuda. 
+

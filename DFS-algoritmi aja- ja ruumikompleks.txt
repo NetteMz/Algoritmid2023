@@ -1,0 +1,6 @@
+DFS-algoritmi aja- ja ruumikomplekssus sõltub graafi suurusest ja struktuurist.
+
+Aja komplekssus on O(V+E), kus V on tipude arv ja E on servade arv. Algoritm külastab iga tippu ja iga serva ühe korra.
+Ruumikomplekssus:
+
+Ruumikomplekssus on O(V), kus V on tippude arv. See tuleneb kasutatavast stackist, mis hoiab neid tippe, mida tuleb veel külastada. Stack kasvab kuni graafi kõige kaugem tee on läbitud.
