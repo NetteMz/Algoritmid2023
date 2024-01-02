@@ -1,0 +1,13 @@
+Binaarne otsingupuu (Binary Search Tree ehk BST) on andmestruktuur, mis on mõeldud tõhusaks otsimiseks ja sorteeritud andmete haldamiseks. 
+
+Otsingupuu iga sõlme vasak allpuu sisaldab vaid väiksemaid väärtusi ja parem allpuu sisaldab ainult suuremaid väärtusi kui sõlm ise. Iga sõlme võtmeväärtus puus on ainulaadne, see tähendab, et ei ole kahte sõlme samaväärse võtmega. Inorder (vasak, juur, parem) puu läbimine annab välja sorteeritud järjestuse võtmetest.
+
+
+Tasakaalustamata puud võivad tekitada olukordi, kus puu muutub sirgjooneliseks, mis omakorda võib viia otsingute ja teiste operatsioonide aja keerukuse halvenemiseni. Kui BST on tasakaalustamata, võib selle kõrgus muutuda n-iks, kus n on sõlmede arv, mis viib otsinguaja O(n) asemel soovitud O(log n) ajani.
+
+Üks võimalus tasakaalustamata puude probleemi lahendamiseks on kasutada tasakaalustatud otsingupuid, näiteks AVL-puud või punase-musta puid. Need struktuurid hoiavad ära puu liigset sirgjoonelisust, tagades, et puu kõrgus ei ületa logaritmiliselt sõlmede arvu.
+
+AVL-puu tagab, et igal sõlmel on tasakaalufaktor, mis näitab erinevust vasaku ja parema alamhargnemise kõrguse vahel.
+Puu püsib tasakaalus, sest iga operatsiooni järel kontrollitakse tasakaalufaktoreid ja vajadusel teostatakse tasakaalustamisoperatsioon.
+
+Punane-must puu määrab iga sõlme värvuse (punane või must) vastavalt teatud reeglitele. See hoiab puu tasakaalus, jälgides, et punased sõlmed oleksid jaotatud võrdselt ja, et mustade sõlmede arv oleks igal rajal sama.

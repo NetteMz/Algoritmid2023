@@ -1,0 +1,23 @@
+Punane-must puu on tasakaalustatud binaarne otsingupuu tüüp, mis pakub tõhusaid operatsioone (sisestamine, otsimine, kustutamine) samasuguselt nagu binaarsed otsingupuud, kuid vähendades otsinguaega tagades puu tasakaalu. Punase-musta puu peamised omadused on seotud sõlmede värvimisega vastavalt teatud reeglitele.
+
+1. Igal sõlmel on värv, mis võib olla punane või must.
+2.Juursõlm on alati must.
+3. Kui sõlme värv on punane, siis selle vanem on alati must.
+4. Kõikide teeotsade mustade sõlmede arv on võrdne.
+ 
+Punase-musta puud kasutavad rotatsioone tasakaalu säilitamiseks pärast operatsioone, näiteks sisestamist või kustutamist.
+
+Võrdlus: Punane-must puu
+Otsinguaeg: O(log n), kus n on sõlmede arv puus.
+Lisamine ja eemaldamine: O(log n).
+Garanteeritud tasakaal, mis tagab tõhusa jõudluse ka pärast mitmeid operatsioone.
+
+Võrdlus: Binaarne otsingupuu
+Otsinguaeg: O(n) halvimal juhul, O(log n) parimal juhul.
+Lisamine ja eemaldamine: O(n) halvimal juhul, O(log n) parimal juhul.
+Tõhus ainult tasakaalustatud puu korral. 
+
+Punase-musta puu tasakaalustamine ja värvireeglid:
+Punane-must puu kasutab pärast operatsioone (sisestamine, kustutamine) rotatsioone, et taastada puu tasakaalu ja järgida punase-musta puu omadusi. Punase värvi kasutamine annab puule paindlikkuse tasakaalu säilitada.
+Punase sõlme vanema mustaks värvimine võimaldab tasakaalu taastamise ilma suurte muudatusteta.
+Punase-musta puu värvireeglid ja tasakaalustamine tagavad, et teeotsad on võimalikult lühikesed ja puu on üldiselt tasakaalus. Misomakorda tagab, et otsinguaeg, puule lisamine ja puult eemaldamine on O(log n), mis teeb punase-musta puu tõhusaks.

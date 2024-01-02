@@ -1,0 +1,30 @@
+AVL-puu:
+Eelised:
+Täpne tasakaal tagab garanteeritud otsinguaja O(log n).
+Sobib hästi otsingutega seotud rakendustele, kus otsingud on sagedased ja andmebaasid on stabiilsed.
+Puudused:
+Vajab rohkem rotatsioone, mis võib mõjutada jõudlust operatsioonide lisamisel ja eemaldamisel.
+Suurem mälu tarbimine võrreldes mõne muu struktuuriga.
+
+Punane-must puu:
+Eelised:
+Tasakaalustatud ja nõuab vähem pöördeid kui AVL-puu.
+Efektiivne lisamise ja eemaldamise korral.
+Puudused:
+Otsinguaeg võib olla natuke pikem võrreldes AVL-puuga.
+
+Splay-puu:
+Eelised:
+Viimati kasutatud elemendid tõstetakse kiiresti juure poole.
+Säästab otsinguaega hiljuti kasutatud elementidele.
+Puudused:
+Mitte rangelt tasakaalustatud, mis võib viia kõrgeima taseme pikendamiseni ja mõjutada mõnede operatsioonide jõudlust.
+Splay puud kasutatakse sageli vahemälu jõudluse optimeerimiseks.
+
+B-puu:
+Eelised:
+Sobib hästi suurte andmemahtudega andmebaasirakendustele, kus esineb sageli juurdepääse suurtele andmeblokkidele.
+Väiksem tasakaalustamise vajadus kui AVL või punase-musta puu korral.
+Puudused:
+Võib nõuda keerukamat koodi ja implementatsiooni.
+Võrreldes teiste binaarpuudega, võib otsinguaeg olla pikem.

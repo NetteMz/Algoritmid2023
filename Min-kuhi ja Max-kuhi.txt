@@ -1,0 +1,28 @@
+Min-kuhi (Min Heap) ja Max-kuhi (Max Heap) on kaks peamist kuhja (heap) struktuuri, mis kuuluvad binaarsete kuhjade hulka.
+
+Min-kuhi:
+Igal sõlmel on väiksem väärtus kui selle allsõlmedel.
+Miinimumväärtus asub puu juur­sõlmes.
+
+Max-kuhi:
+Igal sõlmel on suurem väärtus kui selle allsõlmedel.
+Maksimumväärtus asub puu juursõlmes.
+
+Aja- ja ruumikomplekssus:
+
+1. Lisa operatsioon:
+Aja keerukus: O(log n), kus n on kuhja suurus.
+Ruumikomplekssus: O(1).
+
+2. Eemalda operatsioon:
+Aja keerukus: O(log n).
+Ruumikomplekssus: O(1).
+
+3.Andmete sorteerimine: 
+Aja keerukus O(n log n).
+
+
+Andmete sorteerimisel lisab struktuur kõik elemendid kuhja, seejärel eemaldab kordamööda minimaalse või maksimaalse elemendi saades tulemuseks sorteeritud järjestuse. 
+
+Prioriteetjärjekorra haldamisel võimaldab kuhja struktuur kiiret juurdepääsu elemendile, millel on minimaalne või maksimaalne väärtus, olenevalt kasutatavast kuhjatüübist.
+Prioriteetjärjekorra rakendusteks võivad olla graafialgoritmid (Dijkstra algoritm), ajakava haldamine või muud rakendused, kus elemendid tuleb töödelda nende prioriteedi alusel.

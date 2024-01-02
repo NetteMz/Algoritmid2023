@@ -1,0 +1,14 @@
+AVL-puu on tasakaalustatud binaarne otsingupuu, kus igal sõlmel on tasakaalufaktor, mis näitab erinevust vasaku ja parema alamhargnemise kõrguste vahel. AVL-puud tagavad, et iga sõlme tasakaalufaktor jääb vahemikku -1, 0, 1. See omadus tagab, et puu kõrgus on O(log n), kus n on puus olevate sõlmede arv. AVL-puud on efektiivsed otsingute, lisamiste ja eemaldamiste korral, kuid nende tasakaalus hoidmine võib nõuda sagedasi rotatsioone.
+
+Iga sõlme tasakaalufaktor näitab erinevust vasaku ja parema alamhargnemise kõrguste vahel.
+Tasakaalufaktor peab jääma vahemikku -1, 0, 1. Iga sõlme ja selle alampuu kõrguste erinevus on väiksem või võrdne 1-ga, mis tagab puu tasakaalu.
+
+Võrdlus: AVL-puu
+Otsinguaeg: O(log n).
+Lisamine ja eemaldamine: O(log n).
+Täpne tasakaal, mis tagab tõhususe, kuid nõuab rohkem rotatsioone. AVL-puud tuleks eelistada, kui osingud on kriitilise tähtsusega ja neid tehakse sagedamini kui lisamisi ja eemaldamisi. Mälu tarbimine ei ole määrav faktor.
+
+Võrldus: Punane-must puu:
+Otsinguaeg: O(log n).
+Lisamine ja eemaldamine: O(log n).
+Tõhus tasakaal, vähem pöördeid kui AVL-puu korral. Punane-must puud tuleks eelistada kui lisamised on sagedased ja eemaldamised on olulised ning otsingud on vähem levinud. Mälu säästmine on samuti oluline, kuna punase-musta puud vajavad vähem täiendavat infot iga sõlme kohta.
