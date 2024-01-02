@@ -1,7 +1,0 @@
-Ajakeerukus binaarotsingu puhul on O(logn), kus n on massiivi suurus. See on efektiivsem kui lineaarotsingu O(n) suurte andmekogumite puhul, eriti kui massiiv on varem sorteeritud.
-
-Näide stsenaariumist, kus binaarotsing on kasulikum kui lineaarotsing:
-
-Kujutame ette, et mul on suur sorteeritud telefoninumbrite loetelu ja ma soovin kontrollida, kas mingisugune teatud number on loetelus olemas. Lineaarotsingu korral peaksin loetlema numbrid ükshaaval üles, kuni leian soovitud numbri või jõuan terve loetelu lõppu. Suure loetelu puhul võtab see korralikult aega.
-
-Binaarotsingu puhul saan kiiremini teada, kas number on loetelus või mitte, kuna iga samm vähendab otsitavat ala poole võrra. Seega on binaarotsing efektiivsem suurte sorteeritud andmekogumite korral. 
