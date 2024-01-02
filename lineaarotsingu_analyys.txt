@@ -1,5 +1,0 @@
-Teoreetiliselt on lineaarotsingu aja keerukus O(n), kus n on otsitavate elementide arv massiivis või loetelus. Ruumi keerukus on O(1), kuna programm kasutab püsivat kogust täiendavat mälu sõltumata massiivi suurusest.
-
-Reaalmaailma rakendustes võib lineaarne otsing olla kasulik näiteks väikestes andmekogumites, kus algoritmi lihtsus ja arusaadavus on olulised. Samuti võib seda kasutada siis, kui ei ole eelnevalt sorteeritud andmeid ja otsitav element asub massiivis või loetelus kuskil alguses.
-
-Piiranguks on see, et lineaarne otsing muutub aeglasemaks suurte andmekogumite korral, kuna aja keerukus kasvab lineaarselt andmete arvuga. Seetõttu võib suurte andmekogumite puhul olla efektiivsem kasutada teisi otsingualgoritme, näiteks binaarset otsingut sorteeritud massiivide jaoks.
