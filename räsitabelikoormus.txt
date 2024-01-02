@@ -1,9 +1,0 @@
-Räsitabeli koormustegur (load factor) on suhe räsitabelisse sisestatud elementide arvu ja tabeli kogumahtude vahel. 
- 
-Koormustegur mõõdab, kui palju tabel on täidetud. Oluline on hoida koormustegur mõõdukas, sest liiga kõrge koormustegur võib põhjustada kokkupõrgete sageduse suurenemist, mis omakorda mõjutab räsitabeli tõhusust ja jõudlust. Kui koormustegur on liiga madal, toimub mälu raiskamine.
-
-Rehashing on protsess, kus räsitabeli suurust suurendatakse või vähendatakse ning kõik elemendid kopeeritakse uude tabelisse vastavalt uuele suurusele. Rehashingu eesmärk on hoida koormustegurit mõõdukana ja vältida kokkupõrgete sageduse suurenemist.
-
-Rehashing mõjutab räsitabeli jõudlust erinevalt sõltuvalt implementatsioonist ja rakendusest. Esialgne rehashingu hetk võib olla aeganõudev, kuna see nõuab olemasolevate elementide uude tabelisse kopeerimist, kuid selle mõju muutub hiljem positiivseks, kuna uus, suurem (või väiksem) tabel vähendab koormustegurit ja seega ka kokkupõrgete tõenäosust.
-
-Kui rehashingut tehakse harva ja koormustegur püsib enamiku ajast madal, siis mõju jõudlusele on minimaalne. Kui rehashingut tehakse liiga sageli või koormustegur on pidevalt kõrge, võib see mõjutada jõudlust negatiivselt. Seetõttu on oluline tasakaalustada rehashingu sagedust ja koormustegurit vastavalt konkreetsele rakendusele.
