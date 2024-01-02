@@ -1,0 +1,37 @@
+Räsimine (hashing) on andmetöötluse meetod, kus sisendandmete kaudu luuakse kindlamõõtmeline väljund ehk räsiväärtus, mida nimetatakse ka "räsiks" või "hash'iks". Hash-i peamine eesmärk on kiiresti leida andmeid suurte andmehulkade hulgast, kuna räsiväärtused on unikaalsed ning seetõttu võimaldavad kiiret otsingut.
+
+Hea räsifunktsiooni omadused hõlmavad eelkõige unikaalsust (iga sisendväärtus peaks genereerima unikaalse räsi), kiirust (räsifunktsioon peaks olema efektiivne) ja vastupidavust (väiksemad sisendmuutused ei tohiks põhjustada suuri räsimuutusi).
+
+Omadused on olulised, sest räsimist kasutatakse paljudes rakendustes, sealhulgas paroolide salvestamisel, digiallkirjastamisel ja andmebaaside otsingutel.
+
+Kui räsi on põhjustanud kokkupõrke (kaks erinevat sisendit annavad sama räsi), on vajalik rakendada kokkupõrgete lahendamise tehnikaid.  
+1. Eraldi aheldamine (Separate Chaining): Iga räsi jaoks hoitakse eraldi ahelat (linked list), kuhu lisatakse kõik samale räsiväärtusele vastavad sisendid. Kokkupõrke korral lisatakse uus element vastavasse ahelasse. See võimaldab hoida kokkupõrgete hulka minimaalsena.
+
+2. Avatud aadressimine (Open Addressing): Uus tühi koht leitakse otse räsi hajutamise tulemusest lähtudes. See võib hõlmata proovimist erinevates kohtades (nt lineaarne proovimine, ruutproovimine jne) kuni sobiva koha leidmiseni.
+
+Avatud aadressimine kokkupõrgete lahendamisel:
+Avatud aadressimine on meetod räsimisel, kus kokkupõrke korral püütakse leida uus vaba koht otse räsi hajutamise tulemusel. See on vastand eraldi aheldamisele, kus kokkupõrke korral hoitakse eraldi ahelaid.
+
+Võrdlus kolme avatud aadressimise tehnikat:
+
+1. Lineaarne otsing: 
+Liigutakse ühest aadressist järgmisele seni, kuni leitakse vaba koht. Kui jõutakse hajutatud tsooni (cluster) otsa, jätkatakse algusest.
+
+2. Ruuduline otsing: 
+Liigutakse ruuduna. Kui tekib kokkupõrge, proovitakse järgmisi aadresse, kasutades ruudukujulist sammu.
+
+3. Topelträsimine: 
+See meetod kasutab kahte räsifunktsiooni. Kui tekib kokkupõrge, liigutatakse järgmisele aadressile, mille samm on määratud teise räsifunktsiooni tulemusega.
+
+Efektiivsuse võrdlus ja olukorrad:
+
+1. Lineaarne otsing: 
+Lihtne ja lihtsasti realiseeritav, kuid kipub tekitama järjestikuste kokkupõrgete probleemi. Sobib hästi väikeste koormustega süsteemidele.
+
+2. Ruuduline otsing: 
+Vähendab kokkupõrgete mõju ja töötab hästi siis, kui tekivad ka mitte ainult järjestikused kokkupõrked.
+
+3. Topelträsimine: 
+Pakub suuremat hajutatust ja vähendab klastrite teket. Sobib hästi olukordades, kus esineb korduvaid kokkupõrkeid ja teised meetodid põhjustavad klastreid.
+
+Iga meetodil on oma plussid ja miinused, ning nende efektiivsus sõltub konkreetsest rakendusest ja andmestruktuurist. Näiteks võib topelträsimine olla eelistatud, kui oodatakse korduvaid kokkupõrkeid, samas kui lineaarne otsing võib olla lihtsam ja efektiivsem väikestes andmehulkades.
